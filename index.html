@@ -14595,41 +14595,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<details>
-    <summary><i>💡 Hint: how to generate a html-slide version of the notebook</i></summary>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs   celltag_remove_input celltag_remove_output">
 
-In VSCode, right-click on the cell and:
-- Click on `Switch Slide Type` to set the proper configuration for the cell
-- Click on `Add Cell Tag` to add tags if needed
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs   celltag_remove_output celltag_remove_input">
 
-Then, generate an html-slide version of this using the following command:
-
-```
-jupyter nbconvert index.ipynb --to slides --post serve --no-prompt \
---TagRemovePreprocessor.remove_input_tags=remove_input \
---TagRemovePreprocessor.remove_all_outputs_tags=remove_output
-```
-
-- `no-prompt` removes the In [xx]: and Out[xx]: to the left of each cells
-- `--TagRemovePreprocessor` allows you to not display either inputs or outputs of cells that have the associated Tag
-
-As for hosting the html using GitHub, pages change the ```<output-format>``` like this:
-
-``` jupyter nbconvert --to html index.ipynb ```
-
-Make sure to name the notebook as 'index' and that GitHub Pages [settings](https://pages.github.com/) are properly set.
-
-</details>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14748,7 +14717,7 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>🎯 That's the goal!</p>
+<p>🎯 This is the goal!</p>
 <p><img src="flood_forecast_app.jpg" alt="flood_forecast_app"></p>
 
 </div>
