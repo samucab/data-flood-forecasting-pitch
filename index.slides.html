@@ -14668,7 +14668,7 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Forecasting-urban-floods">Forecasting urban floods<a class="anchor-link" href="#Forecasting-urban-floods">&#182;</a></h1><p><em>pitched by Samuel Barsanelli Costa</em></p>
+<h1 id="1.-Forecasting-urban-floods"><strong>1. Forecasting urban floods</strong><a class="anchor-link" href="#1.-Forecasting-urban-floods">&#182;</a></h1><p><em>pitched by Samuel Barsanelli Costa | Data Science <strong>batch #1643</strong></em></p>
 
 </div>
 </div>
@@ -14679,7 +14679,7 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Problem-statement">Problem statement<a class="anchor-link" href="#Problem-statement">&#182;</a></h2>
+<h2 id="1.1.-Problem-statement"><strong>1.1. Problem statement</strong><a class="anchor-link" href="#1.1.-Problem-statement">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14691,7 +14691,7 @@ div.jp-OutputPrompt {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>What is an urban flood and why should we care about forecasting it?</p>
 <p>📽️ A picture is worth a thousand words...</p>
-<iframe width="600" height="340"
+<iframe width="600" height="339"
 src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 </iframe>
 </div>
@@ -14708,6 +14708,8 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 <li>the increase in the intensity of rainfall is already increasing flood risk 🌧️</li>
 <li>flood damage shall increase by <strong>170%</strong> with a global <strong>2°C warming</strong> 🔥</li>
 </ul>
+<p>Additional regional conditions may intensify this effects, such as the El Niño that triggered <a href="https://wmo.int/media/news/el-nino-linked-rains-trigger-devastation-brazil">unprecedented flooding in the southern Brazilian state of Rio Grande do Sul</a>.</p>
+<p>🌎 With the best <strong>think globally, act locally</strong> spirit in mind, this idea is scoped to predict flood in (yet to be defined) one among the most affected cities at the Porto Alegre Metro Area during the flooding events of April and May 2024</p>
 
 </div>
 </div>
@@ -14730,20 +14732,8 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<html>
-<head>
-<style>
-img {
-  width: 100%;
-}
-</style>
-</head>
-<body>
+<p><img src="google_flood_hub.jpg" alt="https://sites.research.google/floods/"></p>
 
-<img src="google_flood_hub.jpg" alt="https://sites.research.google/floods/" style="width:600px;">
-
-</body>
-</html>
 </div>
 </div>
 </div>
@@ -14754,7 +14744,7 @@ img {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>But all resources available about flooding are way too much technical, not suited for the mainstream.</p>
-<p>Could anyone quickly disgest this <a href="https://app.powerbi.com/view?r=eyJrIjoiZTRjZDlmYjgtNzAzMS00ZTFmLTlmZDAtNzEwNjM0MDU0NTJhIiwidCI6ImUwYmI0MDEyLTgxMGItNDY5YS04YjRkLTY2N2ZjZDFiYWY4OCJ9">data plot</a> and make an informed "fight-or-flight" decision?</p>
+<p>Could anyone quickly disgest this <a href="https://app.powerbi.com/view?r=eyJrIjoiZTRjZDlmYjgtNzAzMS00ZTFmLTlmZDAtNzEwNjM0MDU0NTJhIiwidCI6ImUwYmI0MDEyLTgxMGItNDY5YS04YjRkLTY2N2ZjZDFiYWY4OCJ9">data plot</a> and make an informed "fight-or-flight" decision? 🤔</p>
 
 </div>
 </div>
@@ -14765,20 +14755,8 @@ img {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<html>
-<head>
-<style>
-img {
-  width: 100%;
-}
-</style>
-</head>
-<body>
+<p><img src="guaiba_telemetry.jpg" alt="https://app.powerbi.com/view?r=eyJrIjoiZTRjZDlmYjgtNzAzMS00ZTFmLTlmZDAtNzEwNjM0MDU0NTJhIiwidCI6ImUwYmI0MDEyLTgxMGItNDY5YS04YjRkLTY2N2ZjZDFiYWY4OCJ9"></p>
 
-<img src="guaiba_telemetry.jpg" alt="https://app.powerbi.com/view?r=eyJrIjoiZTRjZDlmYjgtNzAzMS00ZTFmLTlmZDAtNzEwNjM0MDU0NTJhIiwidCI6ImUwYmI0MDEyLTgxMGItNDY5YS04YjRkLTY2N2ZjZDFiYWY4OCJ9" style="width:600px;">
-
-</body>
-</html>
 </div>
 </div>
 </div>
@@ -14807,20 +14785,8 @@ img {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>🎯 This is the goal!</p>
-<html>
-<head>
-<style>
-img {
-  width: 100%;
-}
-</style>
-</head>
-<body>
+<p><img src="the_flood_forecast.jpg" alt="What if the flood forecast was like this?"></p>
 
-<img src="flood_forecast_app.jpg" alt="What if the flood forecast was like this?" style="width:600px;">
-
-</body>
-</html>
 </div>
 </div>
 </div>
@@ -14830,7 +14796,7 @@ img {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Viability-analysis">Viability analysis<a class="anchor-link" href="#Viability-analysis">&#182;</a></h2>
+<h2 id="1.2.-Viability-analysis"><strong>1.2. Viability analysis</strong><a class="anchor-link" href="#1.2.-Viability-analysis">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15241,7 +15207,8 @@ memory usage: 5.9 MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>👉 <a href="https://samuelbarsanellicosta.github.io/data-flood-forecasting-pitch/">Link to the published notebook</a></p>
+<p>Wait a few minutes after the push to broadcast the updates in the repo and hit the link!</p>
+<p>👉 <a href="https://samuelbarsanellicosta.github.io/data-flood-forecasting-pitch/">Link to the published html-slide</a></p>
 
 </div>
 </div>

@@ -1,0 +1,9 @@
+{
+  "editor.mouseWheelZoom": true,
+  "window.zoomLevel": 0,
+  "window.zoomPerWindow": false,
+  "editor.fontSize": 14,
+  "notebook.markup.fontSize": 16,
+  "notebook.output.fontSize": 14,
+  "terminal.integrated.mouseWheelZoom": true,
+}
