@@ -1,0 +1,23 @@
+adaptar para a sintaxe de RNN
+
+adaptar para numpy ao invés de pd? ou só converter
+	# Loading X
+	response = requests.get('https://wagon-public-datasets.s3.amazonaws.com/06-DL/ECG_X.npy')
+	response.raise_for_status()
+	X = np.load(io.BytesIO(response.content), allow_pickle=True).tolist()
+
+mimetizar o código de
+	"Predicting an entire sequence" em https://kitt.lewagon.com/camps/1643/lectures/content/06-DL_04-RNN_NLP.html
+	activation="relu" na camada Densa para não prever valores negativos
+	"Coded example: Sentiment analysis" para train test split
+
+criar uma classe Station
+	dicionário com key "city" e value "dataframe", para prever inúmeros postos fluviométricos em um único modelo
+		outra key pode ser 'flood_stage'
+	método get_data
+
+completar o pitch com:
+	API call
+	benchmark do tipo de modelo a ser usado
+		https://www.sciencedirect.com/science/article/pii/S0022169420311951
+	insights e ideias moving forward (essas notas aqui!)
