@@ -14709,7 +14709,7 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 <li>flood damage shall increase by <strong>170%</strong> with a global <strong>2°C warming</strong> 🔥</li>
 </ul>
 <p>Additional regional conditions may intensify this effects, such as the El Niño that triggered <a href="https://wmo.int/media/news/el-nino-linked-rains-trigger-devastation-brazil">unprecedented flooding in the southern Brazilian state of Rio Grande do Sul</a>.</p>
-<p>🌎 With the best <strong>think globally, act locally</strong> spirit in mind, this idea is scoped to predict flood in (yet to be defined) one among the most affected cities at the Porto Alegre Metro Area during the flooding events of April and May 2024</p>
+<p>🌎 With the best <strong>think globally, act locally</strong> spirit in mind, this idea is scoped to predict flood in São Leopoldo/RS, Brazil, one among the most affected cities in the Porto Alegre Metro Area during the flooding events of May 2024.</p>
 
 </div>
 </div>
@@ -14720,60 +14720,22 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>From a data science perpective, flood prediction is not new. The <a href="https://www.sciencedirect.com/journal/journal-of-hydrology">Journal of Hydrology</a> alone has over 5k publications about it over the last 20 years. And the vast majority of them uses <strong>RNN-LSTM</strong> models for such predictions.</p>
-<p>Even Google has it's own AI model to predict daily flood. They've published their approach on a <a href="https://www.nature.com/articles/s41586-024-07145-1">paper</a> in Nature, and made it online at the <a href="https://sites.research.google/floods/l/0/0/3">Flood Hub</a> in 80+ countries.</p>
-
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>🌶 From a data science perpective, flood prediction is a hot topic. The <a href="https://www.sciencedirect.com/journal/journal-of-hydrology">Journal of Hydrology</a> alone has over 5k papers about it. Even Google has it's own AI model to predict flood. They've published their approach in a must-read <a href="https://www.nature.com/articles/s41586-024-07145-1">paper</a> in Nature, and made their findings available at <a href="https://sites.research.google/floods/l/0/0/3">Flood Hub</a> for 80+ countries.</p>
+<p>🧠 The vast majority of the research applies <strong>RNN-LSTM</strong> models for flood predictions.</p>
 <p><img src="google_flood_hub.jpg" alt="https://sites.research.google/floods/"></p>
 
 </div>
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>But all resources available about flooding are way too much technical, not suited for the mainstream.</p>
-<p>Could anyone quickly disgest this <a href="https://app.powerbi.com/view?r=eyJrIjoiZTRjZDlmYjgtNzAzMS00ZTFmLTlmZDAtNzEwNjM0MDU0NTJhIiwidCI6ImUwYmI0MDEyLTgxMGItNDY5YS04YjRkLTY2N2ZjZDFiYWY4OCJ9">data plot</a> and make an informed "fight-or-flight" decision? 🤔</p>
-
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>But all resources available about flooding are way too much technical, not suited for the general public.</p>
+<p>🤔 Could you quickly disgest this <a href="https://app.powerbi.com/view?r=eyJrIjoiZTRjZDlmYjgtNzAzMS00ZTFmLTlmZDAtNzEwNjM0MDU0NTJhIiwidCI6ImUwYmI0MDEyLTgxMGItNDY5YS04YjRkLTY2N2ZjZDFiYWY4OCJ9">data plot</a> and make an informed "fight-or-flight" decision if you should stay or run away from this flood risk area?</p>
 <p><img src="guaiba_telemetry.jpg" alt="https://app.powerbi.com/view?r=eyJrIjoiZTRjZDlmYjgtNzAzMS00ZTFmLTlmZDAtNzEwNjM0MDU0NTJhIiwidCI6ImUwYmI0MDEyLTgxMGItNDY5YS04YjRkLTY2N2ZjZDFiYWY4OCJ9"></p>
-
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The driving questions of this idea are:</p>
-<ul>
-<li>can a classification model be trained to predict flood from rainfall data?</li>
-<li>how accurate could it be?</li>
-<li>how for in advance could we predict a flood (e.g. 5-day)?</li>
-<li>could we publish it in real-time in a easy-to-digest fashion?</li>
-<li>does it make sense to communicate just as we do with weather forecast?</li>
-</ul>
 
 </div>
 </div>
@@ -14784,9 +14746,22 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>💪 Let's code this together!
-<img src="the_flood_forecast.jpg" alt="What if the flood forecast was like this?"></p>
+<p>🤓 What if we train a model and make it a <strong>near real-time forescat web-app</strong>, with very easy-to-digest info just like weather forecasts?</p>
+<p>💪 Let's code this together!</p>
+<html>
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
 
+<img src="flood_forecast_app.jpg" alt="What if the flood forecast was like this?" style="width:700px;">
+
+</body>
+</html>
 </div>
 </div>
 </div>
@@ -14796,7 +14771,7 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="1.2.-Viability-analysis"><strong>1.2. Viability analysis</strong><a class="anchor-link" href="#1.2.-Viability-analysis">&#182;</a></h2>
+<h2 id="1.2.-Data-sources"><strong>1.2. Data sources</strong><a class="anchor-link" href="#1.2.-Data-sources">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14806,13 +14781,14 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>To address this model we'll need, at least:</p>
+<p>To address this problem we'll need, at least:</p>
 <ul>
-<li><strong>river stage data</strong>: the measure of how high the level of the river is, at a certain location, in reference to a ground level (usually measured in cm). This is the target variable, the <code>y</code> 🎯</li>
-<li><strong>historical rainfall data</strong>: the amount of rainfall at a certain location, measured as the amont of rainfall in a squared meter and reported as water height of that square (in mm). This is the exogenous variable, our <code>X</code> to train/test the model.</li>
-<li><strong>future rainfall data</strong>: this should be a reliable rainfall forecast source, in the same format as the historical data (measuring unit and sampling rate). This is our <code>X</code> to predict the future.</li>
+<li><strong>river stage data</strong>: the measure of the water level of a river (usually measured in cm). This will be our <code>y</code></li>
+<li><strong>historical rainfall data</strong>: the amount of rainfall at a certain location (usually measured in mm). This will be our <code>X</code>.</li>
+<li><strong>future rainfall data</strong>: rain forecast. This will be our <code>X</code> to get the <code>y_pred</code>.</li>
+<li><strong>meteorological data</strong>: additional meaninfull <code>X</code>s such as air temperature, surface pressure, soil moisture at different depths, wind speed and solar radiance.</li>
 </ul>
-<p>Automated Telemetry Stations comes out to the the best source for this goal, as they continuosly collect data at a certain timeframe (usually between 15 min and 60 min) and is less prone to human data collection errors.</p>
+<p>Automated Telemetry Stations comes out to be the best source for ground-truth river and rain data, as they continuosly collect data at a certain timeframe (usually every 15 min). Additional meteorological data might be derived from global weather forecast models.</p>
 
 </div>
 </div>
@@ -14825,20 +14801,11 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>❗<strong>Relevant info regarding rain data sourcing</strong>❗</p>
 <ul>
-<li>Rainfall is a spatially distributed fenomenon.</li>
-<li>All rain from up in the mountains will, at some point in time, flow over the hills and hit the lowest point (it might take hours or even days).</li>
+<li>Rain data is the most relevant exougenous variable for flood prediction.</li>
+<li>But rainfall is not well represented by a single point-source.</li>
+<li>See the picture bellow: all rain from up in the mountains will, at some point in time, flow downhill and hit the lowest point, hence contributing to a flood.</li>
 <li>So the more rainfall stations we collect data from within the contributing are, the best!</li>
 </ul>
-
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <html>
 <head>
 <style>
@@ -14856,13 +14823,27 @@ img {
 </div>
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="1.2.1.-Data-sources"><strong>1.2.1. Data sources</strong><a class="anchor-link" href="#1.2.1.-Data-sources">&#182;</a></h3>
+<p>In order to predict flood at São Leopoldo/RS, Brazil (the ❗ on the map), besides the river stage data (<code>y</code>) and rain data (<code>X</code>) from the very location of the flood, we'll take advantage of other six rain stations distributed over it's drainage area (the 🌧 on the map).</p>
+<html>
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<img src="data_sources.jpg" style="width:600px;">
+
+</body>
+</html>
 </div>
 </div>
 </div>
@@ -14872,54 +14853,41 @@ img {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Here's the avaiable data from Automated Telemetry Stations and a reliable source for rainfall forecast.</p>
+<p>Here are the data sources details to be downloaded.</p>
 <table>
 <thead><tr>
 <th>Data</th>
 <th>Source</th>
 <th>Format</th>
-<th>Measuring unit</th>
 <th>Sampling rate</th>
 <th>Time span</th>
-<th>URL</th>
+<th>Raw data files</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>River stage</td>
-<td>SEMA/RS</td>
+<td><a href="https://saladesituacao.rs.gov.br/dados">SEMA/RS</a></td>
 <td>xls</td>
-<td>cm</td>
 <td>15 min</td>
-<td>2014 on</td>
-<td><a href="https://saladesituacao.rs.gov.br/dados">https://saladesituacao.rs.gov.br/dados</a></td>
+<td>2018 on</td>
+<td><a href="https://drive.google.com/file/d/1lOX845O653rK7Onz0AWZzmelre_IaNRi/view?usp=sharing">river_rain_data.zip</a></td>
 </tr>
 <tr>
-<td>Past rainfall</td>
-<td>SEMA/RS</td>
+<td>Rainfall</td>
+<td><a href="https://saladesituacao.rs.gov.br/dados">SEMA/RS</a></td>
 <td>xls</td>
-<td>mm</td>
 <td>15 min</td>
-<td>2014 on</td>
-<td><a href="https://saladesituacao.rs.gov.br/dados">https://saladesituacao.rs.gov.br/dados</a></td>
+<td>2018 on</td>
+<td>👆 <em>same as above</em></td>
 </tr>
 <tr>
-<td>└────</td>
-<td>INMET</td>
-<td>csv</td>
-<td>mm</td>
-<td>1 hour</td>
-<td>2000 on</td>
-<td><a href="https://portal.inmet.gov.br/dadoshistoricos">https://portal.inmet.gov.br/dadoshistoricos</a></td>
-</tr>
-<tr>
-<td>Future rainfall</td>
-<td>Open-Meteo</td>
+<td>Rain forescast and meteo data</td>
+<td><a href="https://open-meteo.com/en/docs">Open-Meteo</a></td>
 <td>API</td>
-<td>mm</td>
-<td>1 hours</td>
-<td>next 5 days</td>
-<td><a href="https://open-meteo.com/en/docs">https://open-meteo.com/en/docs</a></td>
+<td>1 hour</td>
+<td>1940 up to next 5 days</td>
+<td><a href="https://drive.google.com/file/d/1YArQyT5vuFqmv5xQpckYz8Cxc5-UFaOg/view?usp=sharing">historical_meteo_data.zip</a></td>
 </tr>
 </tbody>
 </table>
@@ -14933,18 +14901,7 @@ img {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The study area!</p>
-
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>📈 Here's a quick plot of a subset of the river stage and rainfall data from <a href="https://saladesituacao.rs.gov.br/api/station/ana/sheet/87382000">São Leopoldo Station</a> at the Sinos River:</p>
+<p>📈 And here's a quick plot of a small subset of the river stage and rainfall data from the rmost ecent flood event at São Leopoldo/RS, Brazil:</p>
 <ul>
 <li>Over <strong>6 months</strong> of 15-min ininterrupt data collection, from January 15th 2024 up to now.</li>
 <li>Accumulated rainfall over a moving window of 11 days (the time it takes for the most distant raindrop to get down to the flooding area).</li>
@@ -14986,7 +14943,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>👇 And here's a fresh hourly weather forecast for São Leopoldo, taken from the Open-Meteo API pointing out to the <a href="https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast">Global Forecast System (GFS)</a> model.</p>
+<p>👇 Finally, a fresh hourly weather forecast for São Leopoldo, taken from the Open-Meteo API pointing out to the <a href="https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast">Global Forecast System (GFS)</a> model.</p>
 <p>❗A limitation to keep in mind is that the API's non-commercial free tier allows 10,000 calls/day.</p>
 
 </div>
