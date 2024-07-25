@@ -14679,7 +14679,8 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="1.1.-Problem-statement"><strong>1.1. Problem statement</strong><a class="anchor-link" href="#1.1.-Problem-statement">&#182;</a></h2>
+<h2 id="1.1.-Problem-statement"><strong>1.1. Problem statement</strong><a class="anchor-link" href="#1.1.-Problem-statement">&#182;</a></h2><p>What is an urban flood and why should we care about forecasting it?</p>
+
 </div>
 </div>
 </div>
@@ -14689,7 +14690,6 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>What is an urban flood and why should we care about forecasting it?</p>
 <p>📽️ A picture is worth a thousand words...</p>
 <iframe width="600" height="339"
 src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
@@ -14703,7 +14703,7 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>This is a global issue related to climate change, as raised by the <a href="https://www.undrr.org/">UN</a>'s <a href="https://www.undrr.org/gar/gar2023-special-report">GAR23</a> report:</p>
+<p>Urban floods are a global issue related to climate change, as raised by the <a href="https://www.undrr.org/">UN</a>'s <a href="https://www.undrr.org/gar/gar2023-special-report">GAR23</a> report:</p>
 <ul>
 <li>the increase in the intensity of rainfall is already increasing flood risk 🌧️</li>
 <li>flood damage shall increase by <strong>170%</strong> with a global <strong>2°C warming</strong> 🔥</li>
@@ -14747,7 +14747,7 @@ src="https://www.youtube.com/embed/qefFjVbrZwE?autoplay=1&mute=1">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>🤓 What if we train a model and make it a <strong>near real-time forescat web-app</strong>, with very easy-to-digest info just like weather forecasts?</p>
-<p>💪 Let's code this together!</p>
+<p>💪 Let's code this app together!</p>
 <html>
 <head>
 <style>
@@ -14783,10 +14783,10 @@ img {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>To address this problem we'll need, at least:</p>
 <ul>
-<li><strong>river stage data</strong>: the measure of the water level of a river (usually measured in cm). This will be our <code>y</code></li>
-<li><strong>historical rainfall data</strong>: the amount of rainfall at a certain location (usually measured in mm). This will be our <code>X</code>.</li>
-<li><strong>future rainfall data</strong>: rain forecast. This will be our <code>X</code> to get the <code>y_pred</code>.</li>
-<li><strong>meteorological data</strong>: additional meaninfull <code>X</code>s such as air temperature, surface pressure, soil moisture at different depths, wind speed and solar radiance.</li>
+<li><strong>river stage data</strong>: the measure of the water level of a river (usually measured in cm). This will be our target <code>y</code>.</li>
+<li><strong>historical rainfall data</strong>: the amount of rainfall at a certain location (usually measured in mm). This will be our features <code>X</code>.</li>
+<li><strong>future rainfall data</strong>: rain forecast. This will be our future <code>X</code> to calculate <code>y_pred</code>.</li>
+<li><strong>meteorological data</strong>: additional meaninfull features such as air temperature, surface pressure, soil moisture at different depths, wind speed and solar radiance.</li>
 </ul>
 <p>Automated Telemetry Stations comes out to be the best source for ground-truth river and rain data, as they continuosly collect data at a certain timeframe (usually every 15 min). Additional meteorological data might be derived from global weather forecast models.</p>
 
@@ -14903,9 +14903,9 @@ img {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>📈 And here's a quick plot of a small subset of the river stage and rainfall data from the rmost ecent flood event at São Leopoldo/RS, Brazil:</p>
 <ul>
-<li>Over <strong>6 months</strong> of 15-min ininterrupt data collection, from January 15th 2024 up to now.</li>
-<li>Accumulated rainfall over a moving window of 11 days (the time it takes for the most distant raindrop to get down to the flooding area).</li>
-<li>One historical flooding event registered (May 4th 2024)</li>
+<li>It covers only <strong>6 months</strong> of 15-min ininterrupt data collection, from January 15th 2024 up to now.</li>
+<li>Rain is shown accumulated over a moving window of 11 days.</li>
+<li>One historical flooding event was registered (May 4th 2024)</li>
 <li>Over <strong>17k data samples</strong></li>
 </ul>
 
@@ -14943,7 +14943,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>👇 Finally, a fresh hourly weather forecast for São Leopoldo, taken from the Open-Meteo API pointing out to the <a href="https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast">Global Forecast System (GFS)</a> model.</p>
+<p>👇 Finally, a fresh hourly weather forecast for São Leopoldo, taken from the <a href="https://open-meteo.com/en/docs">Open-Meteo API</a> pointing out to the <a href="https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast">Global Forecast System (GFS)</a> model.</p>
 <p>❗A limitation to keep in mind is that the API's non-commercial free tier allows 10,000 calls/day.</p>
 
 </div>
@@ -15069,7 +15069,20 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="%F0%9F%92%AA-Let's-code-this-together!">&#128170; Let's code this together!<a class="anchor-link" href="#%F0%9F%92%AA-Let's-code-this-together!">&#182;</a></h1>
+<h2 id="%F0%9F%92%AA-Let's-code-this-app-together!">&#128170; Let's code this app together!<a class="anchor-link" href="#%F0%9F%92%AA-Let's-code-this-app-together!">&#182;</a></h2><html>
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<img src="flood_forecast_app.jpg" alt="What if the flood forecast was like this?" style="width:700px;">
+
+</body>
+</html>
 </div>
 </div>
 </div>
